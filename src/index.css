@@ -1,0 +1,33 @@
+/* Global colors */
+:root {
+  --primary-color: #1687c9;
+  --secondary-color: #414142;
+  --light-color: hwb(24 36% 2%);
+  --dark-color: #1655c9;
+  --text-color: #e0fbfc;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --font-family: "sans-serif";
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+  margin: 0;
+  padding: 10px 0;
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+}

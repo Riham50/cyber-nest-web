@@ -1,0 +1,144 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+  background: #f4f4f4;
+  position: relative; /* Ensure particles stay within this section */
+  overflow: hidden; /* Prevent particles from overflowing to other sections */
+}
+
+.hero-particles {
+  position: absolute; /* Position particles absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure particles stay behind carousel content */
+}
+
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Ensure carousel content is above particles */
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide.inactive {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 20px;
+  height: 100%;
+  text-align: center;
+  color: var(--dark-color);
+  animation: fadeIn 3s ease-in-out;
+}
+
+.carousel-text h1 {
+  color: var(--light-color);
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.carousel-text p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+/* Specific styling for the first slide */
+.carousel-slide:first-child .carousel-text h1 {
+  font-size: 6em; /* Larger heading for the first slide */
+  font-weight: bold; /* Optional: Make it bold */
+  color: var(--primary-color); /* Optional: Different color */
+}
+
+.carousel-slide:first-child .carousel-text p {
+  font-size: 2em; /* Larger paragraph for the first slide */
+  color: var(--secondary-color); /* Optional: Different color */
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  animation: fadeIn 2s ease-in-out 1s;
+}
+
+.carousel-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Take up 50% of the width */
+  padding: 0 20px;
+  height: 100%; /* Full height */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.carousel-button.prev {
+  left: 0px;
+}
+
+.carousel-button.next {
+  right: 0px;
+}
+
+.hero-carousel svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
