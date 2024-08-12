@@ -7,7 +7,6 @@ const CardImg = function () {
     <>
       <section className="services-section">
         <div className="services-content">
-          <h2>Our Services</h2>
           <div className="services-grid">
             {servicesData.map((service, index) => (
               <div key={index} className="">
