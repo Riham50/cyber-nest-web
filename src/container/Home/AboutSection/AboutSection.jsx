@@ -1,28 +1,26 @@
 import React from "react";
 import "./AboutSection.css";
-import aboutImage from "../../../assets/about-image.jpg";
+// import aboutImage from "";
 
 function AboutSection() {
   return (
     <section className="about-section">
       <div className="about-content">
         <div className="about-image">
-          <img src={aboutImage} alt="About Us" />
+          <img src="../../../../image/about1.jpg" alt="About Us" />
           <div className="overlay">
             <p>
-              Sit vestibulum nec nam porttitor nibh. Urna at faucibus aliquet
-              dolor. Facilisis id diam pellentesque et odio. Potenti sagittis
-              massa lorem arcu sed diam. Consectetur elit sit in donec vitae
-              blandit tincidunt eu. Sed nulla vel diam commodo. Placerat cursus
-              sed blandit eu odio. Sit vestibulum nec nam porttitor nibh. Urna
-              at faucibus aliquet dolor. Facilisis id diam pellentesque et odio.
-              Potenti sagittis massa lorem arcu sed diam. Consectetur elit sit
-              in donec vitae blandit tincidunt eu. Sed nulla vel diam commodo.
-              Placerat cursus sed blandit eu odio. Sit vestibulum nec nam
-              porttitor nibh. Urna at faucibus aliquet dolor. Facilisis id diam
-              pellentesque et odio. Potenti sagittis massa lorem arcu sed diam.
-              Consectetur elit sit in donec vitae blandit tincidunt eu. Sed
-              nulla vel diam commodo. Placerat cursus sed blandit eu odio.
+              We are a dedicated team of technology enthusiasts committed to
+              delivering innovative solutions. Our expertise spans web
+              development, mobile applications, and cybersecurity services,
+              allowing us to provide comprehensive digital solutions for
+              businesses of all sizes. With a focus on quality, reliability, and
+              user experience, we strive to exceed our clients' expectations in
+              every project we undertake. Our mission is to empower businesses
+              through cutting-edge technology, ensuring they stay ahead in a
+              rapidly evolving digital landscape. We believe in building strong,
+              lasting relationships with our clients, driven by transparency,
+              collaboration, and a shared vision for success.
             </p>
             <a href="/contact" className="cta-button">
               contact us
