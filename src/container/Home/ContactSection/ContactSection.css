@@ -27,3 +27,47 @@
   border-radius: 5px;
   font-size: 1.2em;
 }
+
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.icon-link span {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}

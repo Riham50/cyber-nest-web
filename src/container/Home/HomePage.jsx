@@ -6,7 +6,8 @@ import ContactSection from "./ContactSection/ContactSection";
 import Footer from "../../components/Footer/Footer";
 import "./HomePage.css";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
-
+import Slider from "../../components/slider/Slider";
+import CardImg from "../../components/card/Card";
 function HomePage() {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -33,6 +34,8 @@ function HomePage() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <CardImg />
+      <Slider />
       <ContactSection />
       <Footer />
       <ScrollToTopButton />
