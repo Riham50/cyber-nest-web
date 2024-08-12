@@ -5,7 +5,7 @@ import About from "./container/About/About";
 import Services from "./container/Services/Services";
 import Contact from "./container/Contact/Contact";
 import NotFound from "./components/Notfound";
-import Navbar from "./container/Navbar/NavBar";
+import Navbar from "./components/Navbar/NavBar";
 
 function App() {
   return (

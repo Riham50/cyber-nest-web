@@ -3,7 +3,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import AboutSection from "./AboutSection/AboutSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import ContactSection from "./ContactSection/ContactSection";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import "./HomePage.css";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
