@@ -53,26 +53,30 @@
   align-items: flex-start;
 }
 
-.quick-links div {
+.quick-links-container {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.quick-links ul li {
+.quick-links-nav {
   margin-bottom: 0.5rem;
-}
-
-.quick-links a {
-  color: #fff;
   text-decoration: none;
+  color: #444;
+  font-size: 18px;
 }
 
-.quick-links a:hover {
-  text-decoration: underline;
+.quick-links-nav:hover {
+  font-weight: bold;
+  color: #595959;
+}
+
+.current {
+  display: none;
 }
 
 .contact-follow p {
@@ -91,13 +95,13 @@
 }
 
 .social-icons a:hover {
-  color: #ddd; /* Lighten color on hover */
+  color: #ddd;
 }
 
 .footer-bottom {
   text-align: center;
   padding: 1rem;
-  background: #111; /* Slightly different black for the bottom section */
+  background: #111;
 }
 
 .footer-bottom p {

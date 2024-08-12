@@ -26,11 +26,40 @@ function Footer() {
         </div>
         <div className="quick-links">
           <h3>Quick Links</h3>
-          <div>
-            <NavLink> Home </NavLink>
-            <NavLink>About Us</NavLink>
-            <NavLink>Services</NavLink>
-            <NavLink>Contact</NavLink>
+          <div className="quick-links-container">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "current" : "quick-links-nav"
+              }
+            >
+              {" "}
+              Home{" "}
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "current" : "quick-links-nav"
+              }
+            >
+              About Us
+            </NavLink>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive ? "current" : "quick-links-nav"
+              }
+            >
+              Services
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "current" : "quick-links-nav"
+              }
+            >
+              Contact
+            </NavLink>
           </div>
         </div>
         <div className="contact-follow">
