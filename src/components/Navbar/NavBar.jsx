@@ -41,7 +41,6 @@ function Navbar() {
         <ul>
           <li>
             <NavLink
-              exact
               to="/"
               className={({ isActive }) =>
                 isActive ? "Current" : "half-header-link"

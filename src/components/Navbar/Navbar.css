@@ -97,6 +97,10 @@ ul li a.Current::after {
   transition: color 0.4s, border-color 0.4s;
 }
 
+.contact-button:hover {
+  background-color: transparent;
+}
+
 /* Fill effect on hover */
 .contact-button::before {
   content: "";
@@ -116,7 +120,7 @@ ul li a.Current::after {
 }
 
 .contact-button:hover {
-  color: white; /* Change text color to white on hover */
+  color: white;
 }
 
 .contact-current {
