@@ -2,13 +2,14 @@ import React from "react";
 import "./Footer.css";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import social media icons
 import { NavLink } from "react-router-dom";
+import Logo from "../../assets/logo.png";
 
 function Footer() {
   return (
     <footer id="main-footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="img/logo.png" alt="CyberNest" />
+          <img src={Logo} alt="CyberNest" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
             deserunt assumenda enim non? Ratione ipsum voluptates fuga eos earum
@@ -73,7 +74,7 @@ function Footer() {
           <p>
             <strong>Phone:</strong> (123) 456-7890
           </p>
-          <h3>Follow Us</h3>
+          <h3 className="follow-us">Follow Us</h3>
           <div className="social-icons">
             <a
               href="https://facebook.com"
