@@ -1,19 +1,21 @@
 import React from "react";
 import "./Footer.css";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import social media icons
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer id="main-footer" className="py-2">
-      <div className="container footer-container">
-        <div>
-          <img src="img/logo.png" alt="NewsGrid" />
+    <footer id="main-footer">
+      <div className="footer-content">
+        <div className="footer-logo">
+          <img src="img/logo.png" alt="CyberNest" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
             deserunt assumenda enim non? Ratione ipsum voluptates fuga eos earum
             vitae.
           </p>
         </div>
-        <div>
+        <div className="newsletter">
           <h3>Email Newsletter</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <form>
@@ -22,38 +24,61 @@ function Footer() {
             <input type="submit" value="Submit" className="btn btn-primary" />
           </form>
         </div>
-        <div>
-          <h3>Site Links</h3>
-          <ul className="list">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/about">About Us</a>
-            </li>
-            <li>
-              <a href="/services">Services</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
+        <div className="quick-links">
+          <h3>Quick Links</h3>
+          <div>
+            <NavLink> Home </NavLink>
+            <NavLink>About Us</NavLink>
+            <NavLink>Services</NavLink>
+            <NavLink>Contact</NavLink>
+          </div>
         </div>
-        <div>
-          <h2>Contact Information</h2>
+        <div className="contact-follow">
+          <h3>Contact Us</h3>
           <p>
-            <strong>Address:</strong> Bole,Addis Ababa
+            <strong>Address:</strong> Bole, Addis Ababa
           </p>
           <p>
-            <strong>Email:</strong>info@company.com
+            <strong>Email:</strong> info@company.com
           </p>
           <p>
             <strong>Phone:</strong> (123) 456-7890
           </p>
+          <h3>Follow Us</h3>
+          <div className="social-icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+          </div>
         </div>
-        <div>
-          <p>Copyright &copy; 2019, All Rights Reserved</p>
-        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>Copyright &copy; 2019, All Rights Reserved</p>
       </div>
     </footer>
   );

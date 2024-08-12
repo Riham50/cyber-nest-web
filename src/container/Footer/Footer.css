@@ -1,50 +1,105 @@
 /* Footer */
 #main-footer {
-  background: var(--secondary-color);
-  color: var(--text-color);
-  margin-top: 2rem;
+  background: #000; /* Black background */
+  color: #fff; /* White text color */
+  padding: 2rem 0;
 }
 
-#main-footer img {
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
   width: 150px;
 }
 
-#main-footer a {
-  color: var(--text-color);
+.footer-logo p {
+  margin-top: 0.5rem;
 }
 
-#main-footer .footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
+.newsletter form {
+  display: flex;
+  flex-direction: column;
 }
 
-#main-footer .footer-container > *:last-child {
-  background: var(--secondary-color);
-  color: var(--dark-color);
-  grid-column: 1 / span 4;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 0.75rem;
-}
-
-#main-footer .footer-container input[type="email"],
-#main-footer .footer-container input[type="text"] {
+.newsletter input[type="email"],
+.newsletter input[type="text"] {
   width: 90%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-#main-footer .footer-container input[type="submit"] {
-  color: var(--text-color);
+.newsletter input[type="submit"] {
   width: 90%;
-}
-#main-footer .footer-container input[type="submit"]:hover {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
-.footer-container h3,
-.footer-container h2 {
-  color: var(--secondary-color);
+.newsletter input[type="submit"]:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quick-links div {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.quick-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-follow p {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Lighten color on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1rem;
+  background: #111; /* Slightly different black for the bottom section */
+}
+
+.footer-bottom p {
+  margin: 0;
 }
