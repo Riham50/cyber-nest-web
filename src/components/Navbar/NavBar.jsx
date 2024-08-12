@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import "./Navbar.css";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -14,6 +15,11 @@ function Navbar() {
       setScrolled(false);
     }
   };
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
