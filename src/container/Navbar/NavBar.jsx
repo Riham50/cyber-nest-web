@@ -29,7 +29,9 @@ function Navbar() {
   return (
     <nav id="main-nav" className={navbarClasses}>
       <div className="container">
-        <img src={Logo} alt="CyberNest" className="logo" />
+        <NavLink to="/">
+          <img src={Logo} alt="CyberNest" className="logo" />
+        </NavLink>
         <ul>
           <li>
             <NavLink
