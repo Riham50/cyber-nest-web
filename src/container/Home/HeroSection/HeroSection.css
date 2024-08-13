@@ -5,24 +5,24 @@
   height: 100vh;
   padding: 0 20px;
   background: #f4f4f4;
-  position: relative; /* Ensure particles stay within this section */
-  overflow: hidden; /* Prevent particles from overflowing to other sections */
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-particles {
-  position: absolute; /* Position particles absolutely */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Ensure particles stay behind carousel content */
+  z-index: 1;
 }
 
 .hero-carousel {
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 2; /* Ensure carousel content is above particles */
+  z-index: 2;
 }
 
 .carousel-slides {
@@ -85,16 +85,15 @@
   margin-bottom: 30px;
 }
 
-/* Specific styling for the first slide */
 .carousel-slide:first-child .carousel-text h1 {
-  font-size: 6em; /* Larger heading for the first slide */
-  font-weight: bold; /* Optional: Make it bold */
-  color: var(--primary-color); /* Optional: Different color */
+  font-size: 5em;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .carousel-slide:first-child .carousel-text p {
-  font-size: 2em; /* Larger paragraph for the first slide */
-  color: var(--secondary-color); /* Optional: Different color */
+  font-size: 2em;
+  color: var(--secondary-color);
 }
 
 .cta-button {
@@ -111,9 +110,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* Take up 50% of the width */
+  width: 50%;
   padding: 0 20px;
-  height: 100%; /* Full height */
+  height: 100%;
 }
 
 .carousel-button {

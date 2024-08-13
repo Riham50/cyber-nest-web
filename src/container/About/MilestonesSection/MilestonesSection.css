@@ -1,0 +1,29 @@
+.milestones-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.milestones-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.milestones-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.milestone-title {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.45);
+  font-family: var(--font-family);
+  font-weight: 600;
+}

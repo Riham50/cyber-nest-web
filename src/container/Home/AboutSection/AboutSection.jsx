@@ -11,16 +11,12 @@ function AboutSection() {
           <div className="overlay">
             <p>
               We are a dedicated team of technology enthusiasts committed to
-              delivering innovative solutions. Our expertise spans web
+              delivering innovative solutions. Our expertise spans in web
               development, mobile applications, and cybersecurity services,
               allowing us to provide comprehensive digital solutions for
               businesses of all sizes. With a focus on quality, reliability, and
               user experience, we strive to exceed our clients' expectations in
-              every project we undertake. Our mission is to empower businesses
-              through cutting-edge technology, ensuring they stay ahead in a
-              rapidly evolving digital landscape. We believe in building strong,
-              lasting relationships with our clients, driven by transparency,
-              collaboration, and a shared vision for success.
+              every project we undertake.
             </p>
             <a href="/contact" className="cta-button">
               contact us

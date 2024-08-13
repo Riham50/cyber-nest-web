@@ -1,4 +1,6 @@
-/* Global colors */
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 :root {
   --primary-color: #1687c9;
   --secondary-color: #414142;
@@ -7,7 +9,8 @@
   --text-color: #e0fbfc;
   --black-color: #000000;
   --white-color: #ffffff;
-  --font-family: "sans-serif";
+  --font-family: "Poppins", sans-serif;
+  --Catamaran: "Catamaran", sans-serif;
 }
 
 body {

@@ -8,6 +8,7 @@ import "./HomePage.css";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import Slider from "../../components/slider/Slider";
 import CardImg from "../../components/card/Card";
+
 function HomePage() {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
