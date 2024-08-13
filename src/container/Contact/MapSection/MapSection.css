@@ -1,0 +1,16 @@
+.map-section {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
