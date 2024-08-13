@@ -15,10 +15,10 @@ function AboutHeroSection() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex((i) => (i + 1) % words.length);
-    }, 1000);
+    }, 1300);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [words.length]);
 
   return (
     <section className="about-hero-section">

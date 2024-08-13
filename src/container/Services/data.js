@@ -4,6 +4,46 @@ import {
   IoCloud,
   IoShieldCheckmark,
 } from "react-icons/io5";
+
+export const TeamTop = [
+  { name: "John Doe", title: "CEO", img: "../../../image/p1.jpg" },
+  {
+    name: "Jane Smith",
+    title: "CFO",
+    img: "../../../image/p2.jpg",
+  },
+  {
+    name: "Mark Johnson",
+    title: "CTO",
+    img: "../../../image/p5.jpg",
+  },
+];
+
+export const TeamMembers = [
+  { name: "John Doe", title: "Front-end dev", img: "../../../image/p4.jpg" },
+  {
+    name: "Jane Smith",
+    title: "Full-stack dev",
+    img: "../../../image/p2.jpg",
+  },
+  {
+    name: "Mark Johnson",
+    title: "Back-end dev",
+    img: "../../../image/p5.jpg",
+  },
+  { name: "John Doe", title: "Front-end dev", img: "../../../image/p1.jpg" },
+  {
+    name: "Jane Smith",
+    title: "Full-stack dev",
+    img: "../../../image/p2.jpg",
+  },
+  {
+    name: "Mark Johnson",
+    title: "Back-end dev",
+    img: "../../../image/p5.jpg",
+  },
+];
+
 export const testimonialData = [
   {
     postId: 1,
