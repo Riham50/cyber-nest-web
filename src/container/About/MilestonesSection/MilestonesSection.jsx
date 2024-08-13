@@ -36,18 +36,18 @@ function MilestonesSection() {
           observer.unobserve(sectionRef.current);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.6 }
     );
 
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
 
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
+    // return () => {
+    //   if (sectionRef.current) {
+    //     observer.unobserve(sectionRef.current);
+    //   }
+    // };
   }, []);
 
   return (
