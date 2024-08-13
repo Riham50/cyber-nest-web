@@ -172,19 +172,19 @@ Slider
 
 #slider .slider-section .prev:hover,
 #slider .slider-section .next:hover {
-  background: var(--clr-primary-5);
+  background: var(--primary-color);
 }
 
 #slider .slider-section .prev {
   left: 0;
   color: rgb(255, 255, 255);
-  background-color: var(--clr-primary-5);
+  background-color: var(--primary-color);
 }
 
 #slider .slider-section .next {
   right: 0;
   color: rgb(255, 255, 255);
-  background-color: var(--clr-primary-5);
+  background-color: var(--primary-color);
 }
 
 @media (min-width: 800px) {
@@ -192,11 +192,13 @@ Slider
     max-width: 45em;
   }
 
-  #slider .slider-section.prev,
+  #slider .slider-section .prev,
   #slider .slider-section .next {
     width: 2rem;
     height: 2rem;
     font-size: 1.5rem;
+    border-radius: 50%;
+    align-items: center;
   }
 }
 

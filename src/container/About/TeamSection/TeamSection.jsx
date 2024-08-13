@@ -11,7 +11,7 @@ function TeamSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 1700);
 
     return () => clearInterval(interval);
   }, [currentIndex, items]);
