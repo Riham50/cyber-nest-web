@@ -36,6 +36,11 @@ export const TeamMembers = [
     img: "../../../Team photo/Edna.jpg",
   },
   {
+    name: "Jasmine",
+    title: "Front-end developer",
+    img: "../../../Team photo/Jasmine.jpg",
+  },
+  {
     name: "Yohannes Misganaw",
     title: "Full-stalk developer",
     img: "../../../Team photo/Yohannes.png",

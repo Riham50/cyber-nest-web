@@ -98,16 +98,9 @@
   padding: 0 20px;
   z-index: 2;
   border-radius: 100%;
+  right: 0;
 }
 
 .slider-btn:focus {
   outline: none;
-}
-
-.slider-btn:nth-child(1) {
-  left: 0;
-}
-
-.slider-btn:nth-child(3) {
-  right: 0;
 }

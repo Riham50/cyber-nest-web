@@ -4,7 +4,7 @@ import HomePage from "./container/Home/HomePage";
 import About from "./container/About/About";
 import Services from "./container/Services/Services";
 import Contact from "./container/Contact/Contact";
-import NotFound from "./components/Notfound";
+import NotFound from "./components/error-pages/NotFound";
 import Navbar from "./components/Navbar/NavBar";
 
 function App() {

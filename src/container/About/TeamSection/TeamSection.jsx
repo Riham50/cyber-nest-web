@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./TeamSection.css";
 import { TeamTop, TeamMembers } from "../../Service/data";
 
@@ -30,7 +30,7 @@ function TeamSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 1700);
+    }, 1800);
 
     return () => clearInterval(interval);
   }, []);
@@ -51,9 +51,6 @@ function TeamSection() {
       <h3 className="squad">Meet The Tech Squad</h3>
 
       <div className="slider">
-        <button onClick={nextSlide} className="slider-btn">
-          ‹
-        </button>
         <div className="slider-track" ref={sliderRef}>
           {TeamMembers.map((member, index) => (
             <div key={index} className="slider-item">
