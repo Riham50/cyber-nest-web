@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import "./Slider.css";
-import { testimonialData } from "../../container/Services/data";
+import { testimonialData } from "../../container/Service/data";
 
 function Slider() {
   const [people, setPeople] = useState(testimonialData);

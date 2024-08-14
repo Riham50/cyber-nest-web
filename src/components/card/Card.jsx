@@ -1,5 +1,5 @@
 import { Card } from "antd";
-import { servicesData } from "../../container/Services/data";
+import { servicesData } from "../../container/Service/data";
 
 const { Meta } = Card;
 const CardImg = function () {

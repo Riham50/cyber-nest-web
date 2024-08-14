@@ -1,7 +1,6 @@
-/* Footer */
 #main-footer {
-  background: #000; /* Black background */
-  color: #fff; /* White text color */
+  background: #000;
+  color: #fff;
   padding: 2rem 0;
 }
 
@@ -31,6 +30,9 @@
   width: 90%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  font-family: var(--font-family);
+  background-color: rgb(177, 177, 177);
 }
 
 .newsletter input[type="submit"] {
@@ -40,6 +42,9 @@
   border: none;
   padding: 0.5rem;
   cursor: pointer;
+  border-radius: 1rem;
+  font-family: var(--font-family);
+  background-color: rgb(177, 177, 177);
 }
 
 .newsletter input[type="submit"]:hover {

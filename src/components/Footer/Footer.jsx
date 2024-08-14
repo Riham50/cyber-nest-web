@@ -11,14 +11,12 @@ function Footer() {
         <div className="footer-logo">
           <img src={Logo} alt="CyberNest" />
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-            deserunt assumenda enim non? Ratione ipsum voluptates fuga eos earum
-            vitae.
+            CyberNest is dedicated to providing innovative software solutions.
           </p>
         </div>
         <div className="newsletter">
           <h3>Email Newsletter</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Subscribe to our monthly News letter.</p>
           <form>
             <input type="email" placeholder="Enter Email..." />
             <input type="text" placeholder="Enter Comment..." />
@@ -108,7 +106,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright &copy; 2019, All Rights Reserved</p>
+        <p>Copyright &copy; 2024, All Rights Reserved</p>
       </div>
     </footer>
   );

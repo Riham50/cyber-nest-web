@@ -8,7 +8,6 @@
   overflow: hidden;
 }
 
-/* Content wrapper for alignment */
 .about-content {
   display: flex;
   align-items: center;
@@ -18,7 +17,6 @@
   margin: 0 auto;
 }
 
-/* Image section */
 .about-image {
   position: relative;
   flex: 1;
@@ -35,7 +33,6 @@
   transition: transform 0.4s ease-in-out;
 }
 
-/* Overlay text */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -65,7 +62,6 @@
   transform: translateY(0);
 }
 
-/* Text section */
 .about-text {
   flex: 1;
   max-width: 50%;

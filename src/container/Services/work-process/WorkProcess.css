@@ -1,0 +1,44 @@
+.workprocess-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.workprocess-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.workprocess-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: var(--dark-color);
+}
+
+.workprocess-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.workprocess-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workprocess-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.workprocess-item h3 {
+  font-size: 1.5em;
+}
+
+.workprocess-item p {
+  font-size: 1.2em;
+  color: #666;
+}

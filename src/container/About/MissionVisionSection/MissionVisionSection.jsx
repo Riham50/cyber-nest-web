@@ -7,7 +7,6 @@ import whyUsImage from "../../../assets/whyus-image.webp";
 function MissionVisionSection() {
   return (
     <section className="mission-vision-section">
-      {/* Mission Section */}
       <div className="mission">
         <div className="text-content">
           <h2>Our Mission</h2>

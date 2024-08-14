@@ -1,7 +1,7 @@
 .about-hero-section {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between the text and the image */
+  justify-content: space-between;
   padding: 0 50px;
   height: 100vh;
   color: white;
@@ -10,9 +10,9 @@
 }
 
 .hero-content {
-  max-width: 50%; /* Ensure the text takes up half the width */
+  max-width: 50%;
   position: relative;
-  overflow: hidden; /* Ensure overflow is hidden to keep the effect clean */
+  overflow: hidden;
 }
 
 .hero-content h3 {
@@ -57,7 +57,6 @@
   background-color: black;
 }
 
-/* Image section */
 .hero-image {
   max-width: 50%;
   overflow: hidden;

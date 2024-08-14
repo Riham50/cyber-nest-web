@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./TeamSection.css";
-import { TeamTop, TeamMembers } from "../../Services/data";
+import { TeamTop, TeamMembers } from "../../Service/data";
 
 function TeamSection() {
   const [currentIndex, setCurrentIndex] = useState(0);

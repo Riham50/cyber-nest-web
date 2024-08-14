@@ -1,6 +1,6 @@
 import React from "react";
 import "./ServicesSection.css";
-import { servicesContentData } from "../../Services/data";
+import { servicesContentData } from "../../Service/data";
 function ServicesSection() {
   return (
     <section className="services-section">
