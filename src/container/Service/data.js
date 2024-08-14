@@ -26,7 +26,7 @@ export const TeamMembers = [
     img: "../../../Team photo/Huzeyfa.jpg",
   },
   {
-    name: "Amir",
+    name: "Amir Jelalu",
     title: "Front-end developer",
     img: "../../../Team photo/Amir.JPG",
   },
@@ -36,7 +36,7 @@ export const TeamMembers = [
     img: "../../../Team photo/Edna.jpg",
   },
   {
-    name: "Jasmine",
+    name: "Yasmin Abdellah",
     title: "Front-end developer",
     img: "../../../Team photo/Jasmine.jpg",
   },
