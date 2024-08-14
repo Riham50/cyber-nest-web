@@ -20,27 +20,25 @@ export const TeamTop = [
 ];
 
 export const TeamMembers = [
-  { name: "John Doe", title: "Front-end dev", img: "../../../image/p4.jpg" },
   {
-    name: "Jane Smith",
-    title: "Full-stack dev",
-    img: "../../../image/p2.jpg",
+    name: "Huzeyfa Abdurauf",
+    title: "Full-stack developer",
+    img: "../../../Team photo/Huzeyfa.jpg",
   },
   {
-    name: "Mark Johnson",
-    title: "Back-end dev",
-    img: "../../../image/p5.jpg",
-  },
-  { name: "John Doe", title: "Front-end dev", img: "../../../image/p1.jpg" },
-  {
-    name: "Jane Smith",
-    title: "Full-stack dev",
-    img: "../../../image/p2.jpg",
+    name: "Amir",
+    title: "Front-end developer",
+    img: "../../../Team photo/Amir.JPG",
   },
   {
-    name: "Mark Johnson",
-    title: "Back-end dev",
-    img: "../../../image/p5.jpg",
+    name: "Edna Mesfen",
+    title: "Front-end developer",
+    img: "../../../Team photo/Edna.jpg",
+  },
+  {
+    name: "Yohannes Misganaw",
+    title: "Full-stalk developer",
+    img: "../../../Team photo/Yohannes.png",
   },
 ];
 

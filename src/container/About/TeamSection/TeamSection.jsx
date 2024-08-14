@@ -3,10 +3,29 @@ import "./TeamSection.css";
 import { TeamTop, TeamMembers } from "../../Service/data";
 
 function TeamSection() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [items, setItems] = useState(TeamMembers);
   const sliderRef = useRef(null);
-  const cloneCount = 4;
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    const handleTransitionEnd = () => {
+      slider.appendChild(slider.firstElementChild);
+      slider.style.transition = "none";
+      slider.style.transform = "translateX(0)";
+      setTimeout(() => {
+        slider.style.transition = "transform 0.5s ease-in-out";
+      }, 0);
+    };
+
+    slider.addEventListener("transitionend", handleTransitionEnd);
+    return () =>
+      slider.removeEventListener("transitionend", handleTransitionEnd);
+  }, []);
+
+  const nextSlide = () => {
+    const slider = sliderRef.current;
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(-25%)`;
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,34 +33,7 @@ function TeamSection() {
     }, 1700);
 
     return () => clearInterval(interval);
-  }, [currentIndex, items]);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex + 1);
-    sliderRef.current.style.transition = "transform 0.5s ease-in-out";
-    sliderRef.current.style.transform = `translateX(-${
-      (currentIndex + 1) * (100 / cloneCount)
-    }%)`;
-
-    if (currentIndex === items.length - cloneCount) {
-      setTimeout(() => {
-        sliderRef.current.style.transition = "none";
-        sliderRef.current.style.transform = `translateX(0)`;
-        setItems((prevItems) => [...prevItems, ...TeamMembers]);
-        setCurrentIndex(0);
-      }, 500);
-    }
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - cloneCount : prevIndex - 1
-    );
-    sliderRef.current.style.transition = "transform 0.5s ease-in-out";
-    sliderRef.current.style.transform = `translateX(-${
-      currentIndex * (100 / cloneCount)
-    }%)`;
-  };
+  }, []);
 
   return (
     <section className="team">
@@ -59,11 +51,11 @@ function TeamSection() {
       <h3 className="squad">Meet The Tech Squad</h3>
 
       <div className="slider">
-        <button onClick={prevSlide} className="slider-btn">
+        <button onClick={nextSlide} className="slider-btn">
           ‹
         </button>
         <div className="slider-track" ref={sliderRef}>
-          {items.map((member, index) => (
+          {TeamMembers.map((member, index) => (
             <div key={index} className="slider-item">
               <img src={member.img} alt={member.name} />
               <h4>{member.name}</h4>
