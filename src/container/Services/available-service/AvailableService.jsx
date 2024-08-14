@@ -7,7 +7,7 @@ const ServiceContent = ({ title, content, imageUrl }) => {
     <div className="service-content-container">
       <div className="service-content-text">
         <h1>
-          <a href="article.html">{title}</a>
+          <a href="article">{title}</a>
         </h1>
         {content.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>

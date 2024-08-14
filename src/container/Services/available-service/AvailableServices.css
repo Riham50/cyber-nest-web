@@ -1,3 +1,6 @@
+.service-container {
+  margin-bottom: 20px;
+}
 .service-content-container {
   display: flex;
   align-items: center;
@@ -94,7 +97,6 @@
 .service-article-card h1 a {
   color: var(--primary-color);
   margin-bottom: 1rem;
-  font-family: var(--Catamaran);
   font-size: 3rem;
   text-decoration: none;
 }
