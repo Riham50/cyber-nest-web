@@ -23,7 +23,7 @@ function AboutHeroSection() {
   return (
     <section className="about-hero-section">
       <div className="hero-content">
-        <h3>Who we Are</h3>
+        <h3>Who we Are ?</h3>
         <div className="slider-container">
           <h1>
             CyberNest Is Your{" "}
