@@ -31,7 +31,7 @@
   width: 300px;
   height: 300px;
   box-shadow: 1px 1px 1px 1px rgba(21, 21, 21, 0.392);
-  animation: team_animate 8s ease-in-out infinite 1s;
+  animation: team_animate 4s ease-in-out infinite 1s;
 }
 
 @keyframes team_animate {
