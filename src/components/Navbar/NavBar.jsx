@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   const handleScroll = () => {
@@ -16,7 +17,10 @@ function Navbar() {
     }
   };
 
-  // Scroll to top on route change
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -36,8 +40,68 @@ function Navbar() {
     <nav id="main-nav" className={navbarClasses}>
       <div className="container">
         <NavLink to="/">
-          <img src={Logo} alt="CyberNest" className="logo" />
+          <img
+            src={Logo}
+            alt="CyberNest"
+            className={`logo ${menuOpen ? "logo-center" : ""}`}
+          />
         </NavLink>
+        <div
+          className={`menu-icon ${menuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
+        <div className={`dropdown-menu ${menuOpen ? "show" : ""}`}>
+          <ul>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "Current" : "half-header-link"
+                }
+                onClick={toggleMenu}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "Current" : "half-header-link"
+                }
+                onClick={toggleMenu}
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "Current" : "half-header-link"
+                }
+                onClick={toggleMenu}
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "contact-current" : "contact-button"
+                }
+                onClick={toggleMenu}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+          </ul>
+        </div>
         <ul>
           <li>
             <NavLink
