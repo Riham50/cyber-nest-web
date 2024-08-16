@@ -141,3 +141,52 @@
   height: auto;
   display: block;
 }
+
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hero-carousel {
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .carousel-slide {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-text,
+  .carousel-svg {
+    width: 100%;
+    /* padding: 10px; */
+    text-align: center;
+    text-align: center; /* Ensure text is centered */
+    overflow-wrap: break-word; /* Handle long words */
+    word-wrap: break-word; /* Handle long words */
+    hyphens: auto; /* Enable hyphenation */
+  }
+
+  .carousel-text h1 {
+    font-size: 2.5em;
+    margin-top: 10%;
+  }
+
+  .carousel-text p {
+    font-size: 1.2em;
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 80%; /* Ensure it doesn't overflow */
+  }
+
+  .carousel-slide:first-child .carousel-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .carousel-slide:first-child .carousel-text p {
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 80%; /* Ensure it doesn't overflow */
+  }
+}

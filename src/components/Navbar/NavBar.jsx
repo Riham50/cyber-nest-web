@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <nav id="main-nav" className={navbarClasses}>
       <div className="container">
-        <NavLink to="/">
+        <NavLink to="/" onClick={toggleMenu}>
           <img
             src={Logo}
             alt="CyberNest"

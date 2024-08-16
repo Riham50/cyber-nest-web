@@ -39,7 +39,7 @@ function HomePage() {
       <Slider />
       <Animation />
       <ContactSection />
-      <Footer />
+      {/* <Footer /> */}
       <ScrollToTopButton />
     </div>
   );
