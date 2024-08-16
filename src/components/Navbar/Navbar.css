@@ -142,7 +142,7 @@ ul li a.Current::after {
 }
 
 .menu-icon.open .bar1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .menu-icon.open .bar2 {
@@ -150,7 +150,7 @@ ul li a.Current::after {
 }
 
 .menu-icon.open .bar3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .dropdown-menu {
