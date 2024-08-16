@@ -50,17 +50,6 @@
   opacity: 0;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .carousel-text {
   display: flex;
   flex-direction: column;
@@ -143,11 +132,10 @@
 }
 
 /* Media query for smaller screens */
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .hero-carousel {
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 20%;
   }
   .carousel-slide {
     flex-direction: column;
@@ -157,13 +145,11 @@
 
   .carousel-text,
   .carousel-svg {
-    width: 100%;
-    /* padding: 10px; */
+    width: 90%;
     text-align: center;
-    text-align: center; /* Ensure text is centered */
-    overflow-wrap: break-word; /* Handle long words */
-    word-wrap: break-word; /* Handle long words */
-    hyphens: auto; /* Enable hyphenation */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .carousel-text h1 {
@@ -173,8 +159,8 @@
 
   .carousel-text p {
     font-size: 1.2em;
-    margin: 0 auto; /* Center the paragraph */
-    max-width: 80%; /* Ensure it doesn't overflow */
+    margin: 0 auto;
+    max-width: 80%;
   }
 
   .carousel-slide:first-child .carousel-text h1 {
@@ -186,7 +172,18 @@
   .carousel-slide:first-child .carousel-text p {
     font-size: 2em;
     color: var(--secondary-color);
-    margin: 0 auto; /* Center the paragraph */
-    max-width: 80%; /* Ensure it doesn't overflow */
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  /* SVG adjustments */
+  .hero-carousel svg {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .carousel-button {
+    padding: 5px;
+    font-size: 14px;
   }
 }
