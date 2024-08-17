@@ -40,21 +40,40 @@
   border-radius: 10px;
 }
 
-.mission .text-content,
-.why-us .text-content {
-  order: 2;
-  text-align: right;
-}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .mission,
+  .vision,
+  .why-us {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.mission .image-content,
-.why-us .image-content {
-  order: 1;
-}
+  .mission .text-content,
+  .why-us .text-content,
+  .vision .text-content {
+    order: 2;
+    text-align: center;
+    padding: 10px;
+  }
 
-.vision .text-content {
-  order: 1;
-}
+  .mission .image-content,
+  .why-us .image-content,
+  .vision .image-content {
+    order: 1;
+    padding: 10px;
+  }
 
-.vision .image-content {
-  order: 2;
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .image-content img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
