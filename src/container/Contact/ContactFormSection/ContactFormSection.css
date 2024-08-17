@@ -44,6 +44,7 @@
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
+  resize: vertical;
 }
 
 .contact-form input:focus,
@@ -99,4 +100,54 @@
 
 .social-media .social-icon:hover {
   color: var(--primary-color);
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-form-details {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-form,
+  .contact-details {
+    margin: 20px 0;
+  }
+
+  .name-phone {
+    flex-direction: column;
+  }
+
+  .name-phone input,
+  .email {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form h2,
+  .contact-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+
+  .social-media h2 {
+    font-size: 1.2rem;
+  }
+
+  .social-media .social-icon {
+    font-size: 1.2rem;
+  }
 }
