@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./TeamSection.css";
-import { TeamTop, TeamMembers } from "../../Service/data";
+import { TeamTop, TeamMembers, MarketingTeam } from "../../Service/data";
 
 function TeamSection() {
   const sliderRef = useRef(null);
@@ -52,6 +52,18 @@ function TeamSection() {
       <div className="team-members">
         {TeamTop.map((member, index) => (
           <div key={index} className="team-member">
+            <img src={member.img} alt={member.name} />
+            <h3>{member.name}</h3>
+            <p>{member.title}</p>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="squad">Meet The Marketing Team</h3>
+
+      <div className="marketing-members">
+        {MarketingTeam.map((member, index) => (
+          <div key={index} className="marketing-member">
             <img src={member.img} alt={member.name} />
             <h3>{member.name}</h3>
             <p>{member.title}</p>

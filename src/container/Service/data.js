@@ -19,6 +19,24 @@ export const TeamTop = [
   },
 ];
 
+export const MarketingTeam = [
+  {
+    name: "Mohammed Beyan Umer",
+    title: "Marketing",
+    img: "../../../Team photo/Mohammed.jpg",
+  },
+  {
+    name: "Jane Smith",
+    title: "CFO",
+    img: "../../../image/p2.jpg",
+  },
+  {
+    name: "Mark Johnson",
+    title: "CTO",
+    img: "../../../image/p5.jpg",
+  },
+];
+
 export const TeamMembers = [
   {
     name: "Huzeyfa Abdurauf",
@@ -46,7 +64,7 @@ export const TeamMembers = [
     img: "../../../Team photo/Jasmine.jpg",
   },
   {
-    name: "Yohannes Misganaw",
+    name: "Yohannes Misganaw Assefa",
     title: "Full-stalk developer",
     img: "../../../Team photo/Yohannes.png",
   },

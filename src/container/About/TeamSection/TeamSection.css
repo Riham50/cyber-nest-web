@@ -36,6 +36,26 @@
   animation: team_animate 4s ease-in-out infinite 1s;
 }
 
+.marketing-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.marketing-member {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  flex: 1 1 300px;
+}
+
+.marketing-member img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  animation: team_animate 4s ease-in-out infinite 1s;
+}
+
 @keyframes team_animate {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -130,6 +150,11 @@
     margin: 10px 0;
   }
 
+  .marketing-member {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
   .slider-item {
     min-width: 50%;
   }
@@ -149,6 +174,10 @@
   }
 
   .team-member img {
+    max-width: 200px;
+  }
+
+  .marketing-member img {
     max-width: 200px;
   }
 
