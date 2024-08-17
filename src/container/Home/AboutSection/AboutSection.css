@@ -14,7 +14,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  flex-direction: row; /* Default horizontal layout */
+  flex-direction: row;
 }
 
 .about-image {
@@ -102,19 +102,19 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-image {
     max-width: 80%;
-    margin: 0 0 30px; /* Add space below the image */
+    margin: 0 0 30px;
   }
 
   .about-text {
     max-width: 100%;
     text-align: center;
-    padding: 0; /* Remove padding */
+    padding: 0;
   }
 
   .about-text h2 {
