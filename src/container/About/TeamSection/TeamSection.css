@@ -19,18 +19,20 @@
 .team-members {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .team-member {
   text-align: center;
-  margin: 0 20px;
+  margin: 20px;
   position: relative;
+  flex: 1 1 300px;
 }
 
 .team-member img {
-  width: 300px;
-  height: 300px;
-  box-shadow: 1px 1px 1px 1px rgba(21, 21, 21, 0.392);
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   animation: team_animate 4s ease-in-out infinite 1s;
 }
 
@@ -78,8 +80,9 @@
 }
 
 .slider-item img {
-  width: 130px;
-  height: 130px;
+  width: 100%;
+  max-width: 130px;
+  height: auto;
   animation: team_animate 3s ease-in-out infinite 0.5s;
 }
 
@@ -110,4 +113,50 @@
 
 .slider-btn:focus {
   outline: none;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .team h2 {
+    font-size: 2rem;
+  }
+
+  .squad {
+    font-size: 1.2rem;
+  }
+
+  .team-member {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .slider-item {
+    min-width: 50%;
+  }
+
+  .slider-btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team h2 {
+    font-size: 1.5rem;
+  }
+
+  .squad {
+    font-size: 1rem;
+  }
+
+  .team-member img {
+    max-width: 200px;
+  }
+
+  .slider-item {
+    min-width: 100%;
+  }
+
+  .slider-btn {
+    font-size: 1.2rem;
+  }
 }

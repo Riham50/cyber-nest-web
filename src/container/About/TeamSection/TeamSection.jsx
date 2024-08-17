@@ -23,8 +23,19 @@ function TeamSection() {
 
   const nextSlide = () => {
     const slider = sliderRef.current;
+    const screenWidth = window.innerWidth;
+
+    let translateValue;
+    if (screenWidth <= 480) {
+      translateValue = "-100%";
+    } else if (screenWidth <= 768) {
+      translateValue = "-50%";
+    } else {
+      translateValue = "-25%";
+    }
+
     slider.style.transition = "transform 0.5s ease-in-out";
-    slider.style.transform = `translateX(-25%)`;
+    slider.style.transform = `translateX(${translateValue})`;
   };
 
   useEffect(() => {
