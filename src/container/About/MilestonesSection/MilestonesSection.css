@@ -19,6 +19,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  justify-content: center; /* Center the grid items */
 }
 
 .milestone-title {
@@ -26,4 +27,16 @@
   color: rgba(0, 0, 0, 0.45);
   font-family: var(--font-family);
   font-weight: 600;
+}
+
+/* Additional media query for even smaller screens */
+@media (max-width: 600px) {
+  .milestones-grid {
+    grid-template-columns: 1fr; /* Make the cards stack in a single column */
+  }
+
+  .milestones-grid > div {
+    display: flex;
+    justify-content: center; /* Center the individual cards */
+  }
 }
