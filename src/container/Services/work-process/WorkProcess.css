@@ -42,3 +42,29 @@
   font-size: 1.2em;
   color: #666;
 }
+@media only screen and (max-width: 768px) {
+  .workprocess-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .workprocess-card {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  gap: 20px;
+  
+}
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+   .workprocess-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .workprocess-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 20px;
+}
+}
